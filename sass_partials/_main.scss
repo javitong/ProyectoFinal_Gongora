@@ -12,13 +12,19 @@ main{
 }
 
 .titulo{
+    margin-left: 50px;
+    margin-top: 50px;
+
+    }
+
+.tituloPagina{
     font-family: Ubuntu, sans-serif;
     font-weight: bolder;
     font-size: 12rem;
     text-align: left;
-    position: absolute;
     top: 15%;
     left: 20%;
+    position: relative;
     transform: translate(-15%, -15%);
     color: $primaryColor;
     text-shadow: $secondaryColor 5px 5px;
@@ -28,11 +34,22 @@ main{
         animation-timing-function: ease-in-out;
         animation-duration: 2s;
         }
+}
+
+    @keyframes titulo {
+        0% {color: $primaryColor;}
+        25% {color: $animationColor;}
+        50% {color: $primaryColor;}
+        75% {color: $animationColor;}
+        100% {color: $primaryColor;}
     }
 
     .banner{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
         margin: 0 auto;
-        padding: 20rem;
+
         height: 100%;
         background-image: url(/resources/Sitio_FV.520.png);
         background-repeat: no-repeat;
@@ -40,4 +57,27 @@ main{
         background-position: center;
         background-size: cover;
         background-attachment: fixed;
+}
+
+.accesoCursos{
+    position: relative;
+    top: 10%;
+    left: 8%;
+}
+
+.botonCursos{
+    width: 250px;
+    border: 1px solid $primaryColor;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 2rem;
+    color: $primaryColor;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    &:hover{
+        color: $secondaryColor;
+        border: 1px solid $secondaryColor;
+    }
 }

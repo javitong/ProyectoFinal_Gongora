@@ -33,16 +33,17 @@ header nav div a img {
 
 #registro {
   font-size: 18px;
-  color: #d81dde;
+  color: #000000;
   border: 1px solid;
   border-radius: 25px;
+  background-color: #d81dde;
   transition: all 1s;
   text-align: right;
-  padding: 10px 15px 10px 15px;
+  padding: 7px 15px 7px 15px;
   margin-left: 12px;
 }
 #registro:hover {
-  color: #24e7e4;
+  color: #ffffff;
 }
 
 .navbar > .container, .navbar > .container-fluid, .navbar > .container-lg, .navbar > .container-md, .navbar > .container-sm, .navbar > .container-xl, .navbar > .container-xxl {
@@ -52,8 +53,9 @@ header nav div a img {
   justify-content: flex-end;
 }
 
-.d-flex .justify-content-end {
-  padding: 30px 20px;
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 
 .navbar-toggler {
@@ -81,18 +83,23 @@ main {
 }
 
 .titulo {
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+.tituloPagina {
   font-family: Ubuntu, sans-serif;
   font-weight: bolder;
   font-size: 12rem;
   text-align: left;
-  position: absolute;
   top: 15%;
   left: 20%;
+  position: relative;
   transform: translate(-15%, -15%);
   color: #d81dde;
   text-shadow: #24e7e4 5px 5px;
 }
-.titulo:hover {
+.tituloPagina:hover {
   -webkit-animation-name: titulo;
           animation-name: titulo;
   -webkit-animation-iteration-count: infinite;
@@ -103,9 +110,46 @@ main {
           animation-duration: 2s;
 }
 
+@-webkit-keyframes titulo {
+  0% {
+    color: #d81dde;
+  }
+  25% {
+    color: #ffffff;
+  }
+  50% {
+    color: #d81dde;
+  }
+  75% {
+    color: #ffffff;
+  }
+  100% {
+    color: #d81dde;
+  }
+}
+
+@keyframes titulo {
+  0% {
+    color: #d81dde;
+  }
+  25% {
+    color: #ffffff;
+  }
+  50% {
+    color: #d81dde;
+  }
+  75% {
+    color: #ffffff;
+  }
+  100% {
+    color: #d81dde;
+  }
+}
 .banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   margin: 0 auto;
-  padding: 20rem;
   height: 100%;
   background-image: url(/resources/Sitio_FV.520.png);
   background-repeat: no-repeat;
@@ -113,4 +157,27 @@ main {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+}
+
+.accesoCursos {
+  position: relative;
+  top: 10%;
+  left: 8%;
+}
+
+.botonCursos {
+  width: 250px;
+  border: 1px solid #d81dde;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 2rem;
+  color: #d81dde;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.botonCursos:hover {
+  color: #24e7e4;
+  border: 1px solid #24e7e4;
 }/*# sourceMappingURL=styles.css.map */
