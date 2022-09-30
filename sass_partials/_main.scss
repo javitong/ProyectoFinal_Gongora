@@ -8,76 +8,199 @@
 
 main{
     background: linear-gradient(-45deg, $backColor, #000000);
-    height: 90vh;
+    padding: 20px;
+
 }
-
-.titulo{
-    margin-left: 50px;
-    margin-top: 50px;
-
-    }
-
-.tituloPagina{
-    font-family: Ubuntu, sans-serif;
-    font-weight: bolder;
-    font-size: 12rem;
-    text-align: left;
-    top: 15%;
-    left: 20%;
-    position: relative;
-    transform: translate(-15%, -15%);
-    color: $primaryColor;
-    text-shadow: $secondaryColor 5px 5px;
-    &:hover{
-        animation-name: titulo;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease-in-out;
-        animation-duration: 2s;
-        }
-}
-
-    @keyframes titulo {
-        0% {color: $primaryColor;}
-        25% {color: $animationColor;}
-        50% {color: $primaryColor;}
-        75% {color: $animationColor;}
-        100% {color: $primaryColor;}
-    }
 
     .banner{
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         margin: 0 auto;
-
-        height: 100%;
+        position: relative;
+        height: 82vh;
         background-image: url(../resources/Sitio_FV.520.png);
         background-repeat: no-repeat;
         background-size: auto;
         background-position: center;
         background-size: cover;
-        background-attachment: fixed;
-}
 
-.accesoCursos{
-    position: relative;
-    top: 10%;
-    left: 8%;
-}
+        .titulo{
+            position: absolute;
+            top: 20%;
+            left: 20%;
 
-.botonCursos{
-    width: 250px;
-    border: 1px solid $primaryColor;
-    border-radius: 50px;
-    text-decoration: none;
-    font-size: 2rem;
-    color: $primaryColor;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    &:hover{
-        color: $secondaryColor;
-        border: 1px solid $secondaryColor;
+            .tituloPagina{
+                font-family: Ubuntu, sans-serif;
+                font-weight: bolder;
+                font-size: 42px;
+                text-align: left;
+                color: $primaryColor;
+                text-shadow: $secondaryColor 2px 2px;
+                &:hover{
+                    animation-name: titulo;
+                    animation-iteration-count: infinite;
+                    animation-timing-function: ease-in-out;
+                    animation-duration: 2s;
+                    }
+            }
+        }
+
+        .accesoCursos{
+            position: absolute;
+            bottom: 30%;
+            left: 20%;
+
+            .botonCursos{
+                width: 150px;
+                border: 1px solid $primaryColor;
+                border-radius: 50px;
+                text-decoration: none;
+                font-size: 20px;
+                color: $primaryColor;
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                &:hover{
+                    color: $secondaryColor;
+                    border: 1px solid $secondaryColor;
+                }
+            }
+        }
     }
+
+@keyframes titulo {
+    0% {color: $primaryColor;}
+    25% {color: $animationColor;}
+    50% {color: $primaryColor;}
+    75% {color: $animationColor;}
+    100% {color: $primaryColor;}
+}
+
+/*Calendario-----------------------------------------------*/
+h3{
+    font-size: 1.5rem;
+    font-family: 'Ubuntu', sans-serif;
+    color: $primaryColor;
+    text-align: center;
+    padding: 10px;   
+}
+h4{
+    text-align: end;
+    color: $secondaryColor;
+    font-size: 20px;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+
+.row{
+    justify-content: center;
+}
+
+.dia{
+    border: solid 1px $primaryColor;
+    border-radius: 10px;
+    margin: 1px;
+    padding: 10px;
+    min-width: 200px;
+    max-width: 250px;
+}
+
+.diaSD{
+    border: solid 1px $primaryColor;
+    border-radius: 10px;
+    margin: 1px;
+    padding: 10px;
+    min-width: 200px;
+    max-width: 250px;
+}
+
+
+.fecha{
+    text-align: end;
+    color: $secondaryColor;
+}
+
+.imgCalendar{
+    width: 100px;
+}
+
+.tituloCalendar{
+    font-size: 17px;
+    text-align: center;
+}
+
+.textoCalendar{
+    font-size: 15px;
+    text-align: center;
+    color: $tertiaryColor
+}
+
+.imgCal{
+    display: flex;
+    justify-content: center;
+}
+
+/*Curso-----------------------------------------------*/
+.tituloSec{
+    font-size: 1.75rem;
+    font-family: 'Ubuntu', sans-serif;
+    color: $tertiaryColor;
+    text-align: center;
+    padding: 10px;   
+}
+.cursos{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card{
+    background-color: $navbarColor;
+    border-radius: 20px;
+    border-color: $primaryColor;
+    border-width: 1.5px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+        .card-img-top{
+            border-radius: 20px;
+            height: 50%;
+        }
+        .card-body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .card-title{
+                font-size: 2rem;
+                font-family: 'Ubuntu', sans-serif;
+                color: $primaryColor;
+                font-weight: 800;
+                text-align: left;
+                padding: 20px;   
+            }
+            .card-text{
+                color: $tertiaryColor;
+                text-align: center;
+            }
+            
+            .btn{
+                border-radius: 30px;
+                border-color: $primaryColor;
+                padding: 10px 50px;
+                margin-right: 20px;
+                margin-bottom: 10px;
+                background-color: $primaryColor;
+                color: $animationColor;
+                &:hover{
+                background-color: $secondaryColor;
+                color: $navbarColor;
+                }
+            }
+        }
 }

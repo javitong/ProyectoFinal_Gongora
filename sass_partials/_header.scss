@@ -1,5 +1,6 @@
 header{
     background-color: $navbarColor;
+    max-height: 8vh;
     nav{
         div{
             a{
@@ -56,6 +57,7 @@ header{
     flex-wrap: inherit;
     align-items: center;
     justify-content: flex-end;
+    z-index: 2;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link{
@@ -70,7 +72,10 @@ header{
 }
 
 .navbar-light .navbar-toggler-icon{
-    z-index: 1;
     color: $primaryColor;
+}
+
+ul{
+    background-color: rgba(0, 0, 0, 0.75)
 }
 
