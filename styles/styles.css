@@ -316,6 +316,62 @@ h4 {
   color: #000000;
 }
 
+/* Formulario------------------------------------------------*/
+.container-form {
+  margin: 20px;
+}
+
+.formulario {
+  border: solid 1px #d81dde;
+  border-radius: 20px;
+  margin: 10px;
+  max-width: 600px;
+}
+
+.mb-3 {
+  color: #aaaaaa;
+}
+
+.map {
+  border: solid 1px #d81dde;
+  border-radius: 20px;
+  margin: 10px;
+  padding-top: 10px;
+  overflow: hidden;
+  max-width: 600px;
+}
+
+.mapaGoogle {
+  border: solid 1px #d81dde;
+  border-radius: 20px;
+  overflow: hidden;
+  max-height: 400px;
+  margin: auto;
+}
+
+.googlemaps {
+  width: 100%;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-family: "Ubuntu", sans-serif;
+  color: #aaaaaa;
+  text-align: center;
+  padding: 10px;
+}
+
+.youtube {
+  min-width: 720px;
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.containerTutoriales {
+  min-width: 300px;
+}
+
 footer {
   background-color: #111010;
 }
