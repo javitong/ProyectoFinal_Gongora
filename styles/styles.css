@@ -116,7 +116,7 @@ main {
 .banner .titulo .tituloPagina {
   font-family: Ubuntu, sans-serif;
   font-weight: bolder;
-  font-size: 42px;
+  font-size: 8rem;
   text-align: left;
   color: #d81dde;
   text-shadow: #24e7e4 2px 2px;
@@ -141,12 +141,12 @@ main {
   border: 1px solid #d81dde;
   border-radius: 50px;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 30px;
   color: #d81dde;
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 .banner .accesoCursos .botonCursos:hover {
   color: #24e7e4;
@@ -372,6 +372,18 @@ h2 {
   min-width: 300px;
 }
 
+.alumnos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel {
+  justify-content: center;
+  max-width: 1400px;
+  margin: auto;
+}
+
 footer {
   background-color: #111010;
 }
@@ -383,7 +395,7 @@ footer {
 .logoFooter .logo {
   width: 70px;
   height: auto;
-  padding: 10px;
+  padding: 7px;
   margin: 10px;
 }
 
@@ -410,4 +422,10 @@ footer {
   color: #24e7e4;
   font-size: 14px;
   text-align: center;
+}
+
+@media (min-width: 500px) {
+  .tituloPagina {
+    font-size: 2rem;
+  }
 }/*# sourceMappingURL=styles.css.map */

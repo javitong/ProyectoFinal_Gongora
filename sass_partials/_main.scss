@@ -33,7 +33,7 @@ main{
             .tituloPagina{
                 font-family: Ubuntu, sans-serif;
                 font-weight: bolder;
-                font-size: 42px;
+                font-size: 8rem;
                 text-align: left;
                 color: $primaryColor;
                 text-shadow: $secondaryColor 2px 2px;
@@ -56,12 +56,12 @@ main{
                 border: 1px solid $primaryColor;
                 border-radius: 50px;
                 text-decoration: none;
-                font-size: 20px;
+                font-size: 30px;
                 color: $primaryColor;
                 padding-left: 20px;
                 padding-right: 20px;
-                padding-top: 10px;
-                padding-bottom: 10px;
+                padding-top: 15px;
+                padding-bottom: 15px;
                 &:hover{
                     color: $secondaryColor;
                     border: 1px solid $secondaryColor;
@@ -258,4 +258,16 @@ h2{
 
 .containerTutoriales{
     min-width: 300px;
+}
+
+.alumnos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel{
+    justify-content: center;
+    max-width: 1400px;
+    margin: auto;
 }
